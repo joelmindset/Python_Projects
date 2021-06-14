@@ -11,23 +11,16 @@ with conn:
 conn.close()
 
 conn = sqlite3.connect('db_sub.db')
-#insert our text files into col_Files
-with conn:
-    cur = conn.cursor()
-    cur.execute("INSERT INTO  tbl_fileList(col_Files) VALUES(?)" , \
-            ('information.docx',))
-    cur.execute("INSERT INTO tbl_fileList(col_Files) VALUES(?)", \
-            ('Hello.txt',))
-    cur.execute("INSERT INTO tbl_fileList(col_Files) VALUES(?)", \
-            ('myImage.png',))
-    cur.execute("INSERT INTO tbl_fileList(col_Files) VALUES(?)", \
-            ('myMovie.mpg',))
-    cur.execute("INSERT INTO tbl_fileList(col_Files) VALUES(?)", \
-            ('World.txt',))
-    cur.execute("INSERT INTO tbl_fileList(col_Files) VALUES(?)", \
-            ('data.pdf',))
-    cur.execute("INSERT INTO tbl_fileList(col_Files) VALUES(?)", \
-        ('myPhoto.jpg',))
+#insert our text files into col_Files and print them
+filelist = ('information.docx', 'Hello.txt', 'myImage.png', \
+        'myMove.mpg', 'World.txt', 'data.pdf', 'myPhoto.jpg')
+for x in filelist:
+    if x.endswith('.txt'):
+        with conn:
+            cur = conn.cursor()
+            cur.execute("INSERT INTO tbl_filelist(col_Files) VALUES (?)", (x,))
+            print(x)
+   
     conn.commit()
 conn.close()
 
