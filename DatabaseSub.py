@@ -38,3 +38,5 @@ with conn:
     cur.execute("SELECT col_Files FROM tbl_fileList WHERE col_Files LIKE '%.txt'")
     varText = cur.fetchall()
     print(varText)
+    conn.commit()
+conn.close()
