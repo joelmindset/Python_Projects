@@ -3,11 +3,9 @@ class Person:
     name = "Unknown"
     age = 0
     study = "Unknown"
-    studentId = 0
-    Teacher = True
-    wage = None
-    dateOfHire = "unknown"
-    department = "Unknown"
+    
+  
+    
 #child class
 class Student(Person):
     name = "Bob"
