@@ -22,7 +22,9 @@ num = Number()
 num.getNums()
 num.setNums(2)
 num.getNums()
-print(obj._codeProtected, '\n','private: {}'.format(num.getNums()), '\n private cant be access outside class'), num.getNums()
+
+
+
 #super
 class Worker:
 
