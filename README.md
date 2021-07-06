@@ -1,5 +1,5 @@
 # Python_Projects
-here i learned how to use python along with framworks django and tkinter
+here i learned how to use python from basics to being able to manage sql and sqlite along with the django and tinkter frameworks.
 
 <h2>Projects</h2>
   <p>
@@ -19,8 +19,8 @@ here i learned how to use python along with framworks django and tkinter
       -tikinter gui generate simple html page
     <li>Nice or Mean</li>
       -Mean or Nice game
-    Django Checkbook<br>
+    <li>Django Checkbook</li>
       -Django checkbook, bank account website check transaction, create new account, check balance, etc.
-    Django Unviersity<br>
+    <li>Django Unviersity</li>
       -Django classes and models    
-  
+   </p>  
